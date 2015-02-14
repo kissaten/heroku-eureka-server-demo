@@ -4,12 +4,21 @@ This project demonstrates how to use Netflix OSS with Spring Cloud on Heroku.
 
 ## Quickstart
 
+
+
 ## Production Deployment
 
-To deploy this application to Heroku, first install the Heroku toolbelt:
+First, [create a Heroku account](http://dashboard.heroku.com)
+and then [download and install the Heroku toolbelt](http://toolbelt.heroku.com).
 
+Then clone this project and move into it.
 
-Then create an application by running this command:
+```sh-session
+$ git clone git@github.com:kissaten/heroku-eureka-demo.git
+$ cd heroku-eureka-demo/
+```
+
+Next, create an application by running this command:
 
 ````sh-session
 $ heroku create
