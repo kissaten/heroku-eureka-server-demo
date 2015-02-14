@@ -38,7 +38,7 @@ password. Run this command, but substitute a unique password for `<PASSWORD>`:
 $ heroku config:set EUREKA_USER_PASSWORD=<PASSWORD>
 ```
 
-You're ready to deploy. There are two methods you can use: Git deployment and
+You're ready to deploy. There are two methods you can choose from: Git deployment and
 Maven deployment. The former compiles the application remotely, while the latter
 uses locally compiled artifacts and pushes them to Heroku.
 
