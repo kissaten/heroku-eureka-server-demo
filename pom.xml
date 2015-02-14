@@ -72,7 +72,7 @@
 					<appName>${heroku.appName}</appName>
 					<includeTarget>false</includeTarget>
 					<includes>
-						<include>target/eureka-demo-${project.version}.jar</include>
+						<include>target/${project.build.finalName}-${project.version}.jar</include>
 					</includes>
 				</configuration>
 			</plugin>
