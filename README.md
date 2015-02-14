@@ -16,7 +16,7 @@ and then [download and install the Heroku toolbelt](http://toolbelt.heroku.com).
 Now clone this project and move into it's root directory.
 
 ```
-$ git clone git@github.com:kissaten/heroku-eureka-demo.git
+$ git clone git@github.com:kissaten/heroku-eureka-server-demo.git
 $ cd heroku-eureka-demo/
 ```
 
