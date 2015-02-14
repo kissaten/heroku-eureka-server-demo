@@ -13,14 +13,14 @@ Once it's deployed, Eureka will prompt you for credentials. The defaults are `us
 First, [create a Heroku account](http://dashboard.heroku.com)
 and then [download and install the Heroku toolbelt](http://toolbelt.heroku.com).
 
-Then clone this project and move into it.
+Now clone this project and move into it's root directory.
 
 ```
 $ git clone git@github.com:kissaten/heroku-eureka-demo.git
 $ cd heroku-eureka-demo/
 ```
 
-Next, create an application by running this command:
+Then create a Heroku application by running this command:
 
 ````sh-session
 $ heroku create
@@ -29,16 +29,16 @@ https://fast-beach-5250.herokuapp.com/ | https://git.heroku.com/fast-beach-5250.
 Git remote heroku added
 ```
 
-Now you'll need to create a configation variable to set the default user's
-password. Run this command, btu substitue a unique password for `<PASSWORD>`:
+Now you'll need to create a configuration variable to set the default user's
+password. Run this command, but substitue a unique password for `<PASSWORD>`:
 
 ```
 $ heroku config:set EUREKA_USER_PASSWORD=<PASSWORD>
 ```
 
-You're ready to deploy. There two methods you can use: Git deployment, and
+You're ready to deploy. There are two methods you can use: Git deployment and
 Maven deployment. The former compiles the application remotely, while the latter
-uses locally compiled aritfacts and pushes them to Heroku.
+uses locally compiled artifacts and pushes them to Heroku.
 
 ### Deploying with Git
 

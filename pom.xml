@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.heroku</groupId>
-	<artifactId>eureka-demo</artifactId>
+	<artifactId>eureka-server-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
@@ -36,7 +36,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<start-class>eurekademo.EurekaApplication</start-class>
+		<start-class>eurekademo.EurekaServer</start-class>
 		<java.version>1.7</java.version>
 	</properties>
 
