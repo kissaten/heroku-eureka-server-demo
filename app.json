@@ -1,6 +1,6 @@
 {
   "name": "Eureka Server",
   "description": "Eureka Server demo project.",
-  "website": "https://github.com/kissaten/heroku-eureka-demo",
+  "website": "https://github.com/kissaten/heroku-eureka-server-demo",
   "success_url": "/"
 }

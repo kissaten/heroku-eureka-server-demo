@@ -1,6 +1,7 @@
-# Netflix OSS on Heroku Demo
+# Netflix OSS on Heroku Demo: Eureka Server
 
-This project demonstrates the use of Netflix OSS with Spring Cloud on Heroku.
+This project demonstrates the use of Netflix OSS with Spring Cloud on Heroku. It defines a Eureka server
+that can be used for service discovery.
 
 ## Quickstart
 
@@ -29,8 +30,8 @@ https://fast-beach-5250.herokuapp.com/ | https://git.heroku.com/fast-beach-5250.
 Git remote heroku added
 ```
 
-Now you'll need to create a configuration variable to set the default user's
-password. Run this command, but substitue a unique password for `<PASSWORD>`:
+Now create a configuration variable to set the default user's
+password. Run this command, but substitute a unique password for `<PASSWORD>`:
 
 ```
 $ heroku config:set EUREKA_USER_PASSWORD=<PASSWORD>
@@ -43,7 +44,7 @@ uses locally compiled artifacts and pushes them to Heroku.
 ### Deploying with Git
 
 With you're application prepared (as describe above), simply run this command to
-deploy:
+deploy via Git:
 
 ```sh-session
 $ git push heroku master
@@ -55,14 +56,14 @@ will execute on the Heroku servers.
 ### Deploying with Maven
 
 With you're application prepared, simply run this command to
-deploy (but replace `<appname>`  with the name of the application you created):
+deploy (but replace `<appname>`  with the name of the Heroku application you created):
 
 ```sh-session
 $ mvn -Dheroku.appName=<appname> heroku:deploy
 ...
 [INFO] ---> Packaging application...
 [INFO]      - app: <appname>
-[INFO]      - including: ./target/eureka-demo-0.0.1-SNAPSHOT.jar
+[INFO]      - including: ./target/eureka-server-demo-0.0.1-SNAPSHOT.jar
 [INFO]      - installing: OpenJDK 1.8
 [INFO] ---> Creating slug...
 [INFO]      - file: ./target/heroku/slug.tgz
