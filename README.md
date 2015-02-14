@@ -1,10 +1,10 @@
 # Netflix OSS on Heroku Demo
 
-This project demonstrates how to use Netflix OSS with Spring Cloud on Heroku.
+This project demonstrates the use of Netflix OSS with Spring Cloud on Heroku.
 
 ## Quickstart
 
-
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
 ## Production Deployment
 
@@ -13,7 +13,7 @@ and then [download and install the Heroku toolbelt](http://toolbelt.heroku.com).
 
 Then clone this project and move into it.
 
-```sh-session
+```
 $ git clone git@github.com:kissaten/heroku-eureka-demo.git
 $ cd heroku-eureka-demo/
 ```
@@ -30,7 +30,7 @@ Git remote heroku added
 Now you'll need to create a configation variable to set the default user's
 password. Run this command, btu substitue a unique password for `<PASSWORD>`:
 
-```sh-session
+```
 $ heroku config:set EUREKA_USER_PASSWORD=<PASSWORD>
 ```
 
@@ -43,7 +43,7 @@ uses locally compiled aritfacts and pushes them to Heroku.
 With you're application prepared (as describe above), simply run this command to
 deploy:
 
-```sh-session
+```
 $ git push heroku master
 ```
 
@@ -55,7 +55,7 @@ will execute on the Heroku servers.
 With you're application prepared, simply run this command to
 deploy (but replace `<appname>`  with the name of the application you created):
 
-```sh-session
+```
 $ mvn -Dheroku.appName=<appname> heroku:deploy
 ```
 
@@ -64,7 +64,7 @@ $ mvn -Dheroku.appName=<appname> heroku:deploy
 When your chosen deployment method is finished, run this command to view
 your application:
 
-```sh-session
+```
 $ heroku open
 ```
 
@@ -74,4 +74,4 @@ and the unique password you set as a configuration variable.
 ## Further Reading
 
 +  [Spring Cloud Netflix documentation](http://projects.spring.io/spring-cloud/spring-cloud.html#_spring_cloud_netflix)
-+  []()
++  [Netflix Eureka](https://github.com/netflix/eureka)
