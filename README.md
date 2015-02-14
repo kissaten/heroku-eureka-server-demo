@@ -6,6 +6,8 @@ This project demonstrates the use of Netflix OSS with Spring Cloud on Heroku.
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
+The application will prompt you for credentials. The defaults are `user` and `password`.
+
 ## Production Deployment
 
 First, [create a Heroku account](http://dashboard.heroku.com)
