@@ -43,7 +43,7 @@ uses locally compiled aritfacts and pushes them to Heroku.
 With you're application prepared (as describe above), simply run this command to
 deploy:
 
-```
+```sh-session
 $ git push heroku master
 ```
 
@@ -55,8 +55,28 @@ will execute on the Heroku servers.
 With you're application prepared, simply run this command to
 deploy (but replace `<appname>`  with the name of the application you created):
 
-```
+```sh-session
 $ mvn -Dheroku.appName=<appname> heroku:deploy
+...
+[INFO] ---> Packaging application...
+[INFO]      - app: <appname>
+[INFO]      - including: ./target/eureka-demo-0.0.1-SNAPSHOT.jar
+[INFO]      - installing: OpenJDK 1.8
+[INFO] ---> Creating slug...
+[INFO]      - file: ./target/heroku/slug.tgz
+[INFO]      - size: 79MB
+[INFO] ---> Uploading slug...
+[INFO]      - stack: cedar-14
+[INFO]      - process types: [web]
+[INFO] ---> Releasing...
+[INFO]      - version: 4
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:29 min
+[INFO] Finished at: 2015-02-14T11:38:11-06:00
+[INFO] Final Memory: 27M/579M
+[INFO] ------------------------------------------------------------------------
 ```
 
 ## Viewing Your Application
