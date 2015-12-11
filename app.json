@@ -2,5 +2,11 @@
   "name": "Eureka Server",
   "description": "Eureka Server demo project.",
   "website": "https://github.com/kissaten/heroku-eureka-server-demo",
-  "success_url": "/"
+  "success_url": "/",
+  "env": {
+      "EUREKA_USER_PASSWORD": {
+          "description": "Password for the admin interface.",
+          "generator": "secret"
+      }
+  }
 }
